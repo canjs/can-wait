@@ -477,7 +477,7 @@ describe("setTimeout and XHR", function(){
 				}, 13);
 
 				var xhr = new XMLHttpRequest();
-				xhr.open("GET", "http://chat.donejs.com/api/messages");
+				xhr.open("GET", "http://chat.startjs.com/api/messages");
 				xhr.onload = function(){
 					results.push("1-c");
 				};
@@ -512,7 +512,7 @@ if(isBrowser) {
 				var timesLoaded = 0;
 				new Zone().run(function(){
 					var xhr = new XMLHttpRequest();
-					xhr.open("GET", "http://chat.donejs.com/api/messages");
+					xhr.open("GET", "http://chat.startjs.com/api/messages");
 					xhr.onload = function(){
 						timesLoaded++;
 						if(timesLoaded === 1) {
@@ -535,7 +535,7 @@ if(isBrowser) {
 				var zone = new Zone();
 				zone.run(function(d){
 					var xhr = new XMLHttpRequest();
-					xhr.open("GET", "http://chat.donejs.com/api/messages");
+					xhr.open("GET", "http://chat.startjs.com/api/messages");
 					xhr.send();
 					xhr.onload = function(){
 						zone.data.worked = true;
@@ -553,7 +553,7 @@ if(isBrowser) {
 				var zone = new Zone();
 				zone.run(function(d){
 					var xhr = new XMLHttpRequest();
-					xhr.open("GET", "http://chat.donejs.com/api/messages");
+					xhr.open("GET", "http://chat.startjs.com/api/messages");
 					xhr.send();
 					xhr.onreadystatechange = function(){
 						if(xhr.readyState === 4) {
@@ -572,7 +572,7 @@ if(isBrowser) {
 			var zone = new Zone();
 			zone.run(function(){
 				var xhr = new XMLHttpRequest();
-				xhr.open("GET", "http://chat.donejs.com/api/messages");
+				xhr.open("GET", "http://chat.startjs.com/api/messages");
 				xhr.onload = function(){
 					Promise.resolve().then(function(){
 						Zone.current.data.worked = true;

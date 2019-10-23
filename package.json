@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/canjs/can-zone#readme",
   "devDependencies": {
-    "bit-docs": "0.0.8-0",
+    "bit-docs": "0.1.0",
     "chai": "^4.0.1",
     "detect-cyclic-packages": "^1.1.0",
     "mocha": "^4.0.0",
